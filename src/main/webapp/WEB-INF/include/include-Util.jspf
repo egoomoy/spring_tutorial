@@ -1,0 +1,13 @@
+<%@ page pageEncoding="utf-8"%>
+
+<script>
+		setInterval(function() {
+			var now = new Date();
+			var nowtime = "현재 시간은 " + now.getFullYear() + "년 " + 
+				(now.getMonth() + 1) + "월 " +	now.getDate() + "일 " +
+				now.getHours() + ":" + now.getMinutes() + 
+				":" + now.getSeconds() + "입니다.";
+			document.getElementById("nowtime").innerHTML = nowtime;
+			}, 1000);
+</script>
+
